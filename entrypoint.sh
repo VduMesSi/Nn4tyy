@@ -11,7 +11,7 @@ WSPATH=/tectra
 PORT=8078
 
 # Write V2Ray configuration
-cat << EOF > ${DIR_TMP}/heroku.json
+cat << EOF > ${DIR_TMP}/flym.json
 {
     "inbounds": [{
         "port": ${PORT},
@@ -41,7 +41,7 @@ busybox unzip ${DIR_TMP}/v2ray_dist.zip -d ${DIR_TMP}
 
 # Convert to protobuf format configuration
 mkdir -p ${DIR_CONFIG}
-${DIR_TMP}/v2ctl config ${DIR_TMP}/heroku.json > ${DIR_CONFIG}/config.pb
+${DIR_TMP}/v2ctl config ${DIR_TMP}/flym.json > ${DIR_CONFIG}/config.pb
 
 # Install V2Ray
 install -m 755 ${DIR_TMP}/v2ray ${DIR_RUNTIME}
