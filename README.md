@@ -1,1 +1,1 @@
-https://cloud.okteto.com/deploy
+[(feather1.png)]https://cloud.okteto.com/deploy
