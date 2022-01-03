@@ -8,18 +8,17 @@ DIR_TMP="$(mktemp -d)"
 ID=a4b32fb0-fcc9-4a86-9c0c-2bd11b886a7a
 AID=64
 WSPATH=/tectra
-PORT=8078
+PORT=22571
 
 # Write V2Ray configuration
 cat << EOF > ${DIR_TMP}/flym.json
 {
     "inbounds": [{
         "port": ${PORT},
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "clients": [{
-                "id": "${ID}",
-                "alterId": ${AID}
+                "id": "${ID}"
             }]
         },
         "streamSettings": {
@@ -36,7 +35,7 @@ cat << EOF > ${DIR_TMP}/flym.json
 EOF
 
 # Get V2Ray executable release
-curl --retry 10 --retry-max-time 60 -H "Cache-Control: no-cache" -fsSL github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip -o ${DIR_TMP}/v2ray_dist.zip
+curl --retry 10 --retry-max-time 60 -H "Cache-Control: no-cache" -fsSL github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-arm64-v8a.zip -o ${DIR_TMP}/v2ray_dist.zip
 busybox unzip ${DIR_TMP}/v2ray_dist.zip -d ${DIR_TMP}
 
 # Convert to protobuf format configuration
