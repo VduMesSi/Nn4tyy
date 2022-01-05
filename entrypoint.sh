@@ -8,7 +8,7 @@ DIR_TMP="$(mktemp -d)"
 ID=a4b32fb0-fcc9-4a86-9c0c-2bd11b886a7a
 AID=64
 WSPATH=/tectra
-PORT=8088
+PORT=8080
 
 # Write V2Ray configuration
 cat << EOF > ${DIR_TMP}/flym.json
