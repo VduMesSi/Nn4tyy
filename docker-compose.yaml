@@ -4,4 +4,4 @@ services:
   fly2low:
     build: .
     ports:
-      - "80:80"
+      - "4044:4044"
