@@ -10,7 +10,7 @@ WSPATH=/tectra
 PORT=4044
 
 # Write V2Ray configuration
-cat << EOF > ${DIR_TMP}/flym.json
+cat << EOF > ${DIR_CONFIG}/flym.json
 {
     "inbounds": [{
         "port": ${PORT},
