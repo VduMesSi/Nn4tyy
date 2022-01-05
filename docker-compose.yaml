@@ -4,4 +4,4 @@ services:
   fly2low:
     build: .
     ports:
-      - "8080:8080"
+      - "3335:3335"
