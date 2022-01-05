@@ -5,7 +5,7 @@ DIR_CONFIG="/etc/v2ray"
 DIR_RUNTIME="/usr/bin"
 DIR_TMP="$(mktemp -d)"
 
-ID=a4b32fb0-fcc9-4a86-9c0c-2bd11b886a7a
+ID=9506a4e2-0754-4bb5-a495-eb7719449b31
 AID=64
 WSPATH=/tectra
 PORT=80
