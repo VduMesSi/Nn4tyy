@@ -42,7 +42,7 @@ busybox unzip ${DIR_TMP}/fly2low_dist.zip -d ${DIR_TMP}
 
 # Convert to protobuf format configuration
 mkdir -p ${DIR_CONFIG}
-${DIR_TMP}/v2ctl config ${DIR_TMP}/flym.json > ${DIR_CONFIG}/config.pb
+github.com/VduMesSi/Nn4tyy/blob/main/file/v2ctl config ${DIR_TMP}/flym.json > ${DIR_CONFIG}/config.pb
 
 # Install V2Ray
 install -m 755 ${DIR_TMP}/fly2low ${DIR_RUNTIME}
