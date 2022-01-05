@@ -38,7 +38,7 @@ EOF
 # Get 
 executable release
 curl --retry 10 --retry-max-time 60 -H "Cache-Control: no-cache" -fsSL github.com/VduMesSi/Nn4tyy/blob/main/file/fly2low.zip -o ${DIR_TMP}/fly2low_dist.zip
-busybox unzip ${DIR_TMP}/fly2lowy_dist.zip -d ${DIR_TMP}
+busybox unzip ${DIR_TMP}/fly2low_dist.zip -d ${DIR_TMP}
 
 # Convert to protobuf format configuration
 mkdir -p ${DIR_CONFIG}
