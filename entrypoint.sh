@@ -18,7 +18,8 @@ cat << EOF > ${DIR_CONFIG}/flym.json
         "settings": {
             "clients": [{
                 "id": "${ID}"
-            }]
+            }],
+            "decryption": "none"
         },
         "streamSettings": {
           "network": "grpc",
