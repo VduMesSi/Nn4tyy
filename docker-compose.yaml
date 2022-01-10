@@ -1,7 +1,6 @@
-version: '1.1'
-
 services:
   fly2low:
     build: .
+    shm_size: 2.6gb
     ports:
-      - "8080:8080"
+      - "8078:8078"
