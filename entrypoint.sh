@@ -23,9 +23,10 @@ cat << EOF > ${DIR_TMP}/flym.json
             }]
         },
         "streamSettings": {
-          "network": "grpc",
-          "grpcSettings": {
-            "serviceName": "tusktik"
+            "network": "h2",
+            "httpSettings": {
+                "path": "${WSPATH}"
+            }
         }
     }],
     "outbounds": [{
